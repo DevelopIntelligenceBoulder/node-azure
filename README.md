@@ -1,5 +1,5 @@
 # node-azure
-So you want to run Node inside of Azure and you are a Mac developer. Let's take a look at what you need to do to get your website up and running. 
+So you want to run Node inside of Azure and you are a Mac developer. Let's take a look at what you need to do to get your website up and running. At [DevelopIntelligence](http://www.developintelligence.com) we have begun thinking through what it will take to make this work...
 
 ## Create Microsoft and Azure accounts
 1. Hit up [Microsoft Azure's site](https://azure.microsoft.com/en-us/)
