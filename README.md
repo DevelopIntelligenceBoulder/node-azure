@@ -1,5 +1,5 @@
 # node-azure
-Demo getting Node to run on Azure
+So you want to run Node inside of Azure. Let's take a look at what you need to do to get your website up and running.
 
 ## Create Microsoft and Azure accounts
 1. Hit up [Microsoft Azure's site](https://azure.microsoft.com/en-us/)
@@ -18,8 +18,8 @@ Demo getting Node to run on Azure
     * Click through all the introduction stuff...
     
 ## Create an Azure Web Application
-FYI: These commands differ if this is the first time into Azure or if you have been here before
-1. If it is your first time
+1. FYI: These commands differ if this is the first time into Azure or if you have been here before
+2. If it is your first time into Azure follow this path
     * Select **WEB APP* within the **COMPUTE** menu
     * Select **QUICK CREATE**
     * Enter a name for the web app (e.g. kamrenz will become [http://kamrenz.azurewebsites.net/](http://kamrenz.azurewebsites.net/))
@@ -29,7 +29,7 @@ FYI: These commands differ if this is the first time into Azure or if you have b
     * Click the **CREATE WEB APP** button
     * Switch to the **Azure Preview portal** by clicking the orange triangle with the exclamation point inside
         * Select the **TRY PREVIEW** button
-2. If you happened to be viewing in the **Azure Preview portal**
+3. If you happened to be viewing in the **Azure Preview portal** follow this path
     * Go to **Web Apps** and select **+ Add**
     * Enter a name for the web app (e.g. kamrenz will become [http://kamrenz.azurewebsites.net/](http://kamrenz.azurewebsites.net/))
         * Select a **Resource Group** and **App Service plan/Location**
