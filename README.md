@@ -128,7 +128,42 @@ FYI: These commands differ if this is the first time into Azure or if you have b
         * You should see the **Web App** you created in the Azure Web GUI
 3. Get Azure to deploy your Node application
     * Generate deployment scripts
+        * Run in the terminal: `azure site deploymentscript --node`
+        * This will create 2 files in your project
+            * deploy.sh
+            * .deployment
+        * Add/Commit/Push those files to GitHub
+            * Run in terminal: `git add .deployment`
+            * Run in terminal: `git add deploy.sh`
+            * Run in terminal: `git commit -m "adding deployment scripts for Azure"`
+            * Run in terminal: `git push -u origin master`
     * Turn on Azure Web App project level continuous integration
+        * Go to the Microsoft Azure portal
+        * Select your web application from **Web App** (e.g. kamrenz)
+        * Within the **Settings** menu select **Continuous Deployment** 
+        * Choose to **Configure required settings**
+            * Select GitHub
+        * Authorize and give permission for Azure to interact with your GitHub account
+            * Click **OK**
+        * Choose the appropriate GitHub project repository
+            * In my case this would be **node-azure**
+        * Keep the branch chosen at the default of **master**
+        * Click **OK**
+    * Wait  
+        * Azure will notify you in the portal that the Continuous Integration has been setup propery
+        * Azure will notify you that it is fetching the project from GitHub
+    * Go to your Azure/Node hosted Web Application
+        * This is simply the name of your **Web App** concatenated to **.azurewebsites.net**
+        * In my case it is kamrenz.azurewebsites.net
+        * You should see `Hello Azure` in the browser
+    * How do you know Azure/IIS/Express is serving this up not just Azure/IIS?
+        * Open up your browser developer tools
+        * Look at the HTTP traffic
+        * Check out the Headers for the call to your **Web App** (e.g. kamrenz.azurewebsites.net)
+        * You will see 2 different X-Powered-By headers
+            * `X-Powered-By: Express`
+            * `X-Powered-By: ASP.NET`
+        * If we just used IIS then we would only see the `X-Powered-By: ASP.NET`
  
   
 
